@@ -19,13 +19,13 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<StartPageWrapper />}>
             <Route index element={<Intro />} />
             <Route path="choose" element={<ChooseKeyword />} />
           </Route>
-          <Route path="/newstar" element={<MainPageWrapper />}>
+          <Route path="/news" element={<MainPageWrapper />}>
             <Route index element={<ShortForm />} />
             <Route path=":articleId" element={<NewsDetail />} />
             <Route path="search" element={<Search />} />

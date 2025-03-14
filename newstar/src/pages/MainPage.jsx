@@ -1,17 +1,21 @@
-import { Outlet, useLocation } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom";
 
-import { ContainerWithNav, TotalContainer } from "../styles/Container"
-import { TopNavbar, TopNavbarWithoutBack, BottomNavbar } from "../components/Navbar";
+import { ContainerWithNav, TotalContainer } from "../styles/Container";
+import {
+  TopNavbar,
+  TopNavbarWithoutBack,
+  BottomNavbar,
+} from "../components/Navbar";
 import ScrollToTop from "../Hooks/ScrollToTop";
 
 function MainPage() {
-  const location = useLocation()
+  const location = useLocation();
 
   function renderTopNavbar() {
-    if (location.pathname == '/newstar') {
-      return <TopNavbarWithoutBack />
+    if (location.pathname == "/news") {
+      return <TopNavbarWithoutBack />;
     } else {
-      return <TopNavbar />
+      return <TopNavbar />;
     }
   }
 
@@ -20,12 +24,12 @@ function MainPage() {
       <ScrollToTop>
         {renderTopNavbar()}
         <ContainerWithNav>
-          <Outlet/>
+          <Outlet />
         </ContainerWithNav>
-        <BottomNavbar/>
+        <BottomNavbar />
       </ScrollToTop>
     </TotalContainer>
-  )
+  );
 }
 
-export default MainPage
+export default MainPage;

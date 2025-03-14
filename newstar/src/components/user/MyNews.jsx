@@ -55,7 +55,7 @@ export default function MyNews() {
   }, []);
 
   const handleEmptyClick = () => {
-    navigate("/newstar");
+    navigate("/news");
   };
 
   return (

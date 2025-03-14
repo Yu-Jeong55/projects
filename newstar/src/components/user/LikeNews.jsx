@@ -58,7 +58,7 @@ export default function LikeNews() {
   }, [inView]);
 
   const handleEmptyClick = () => {
-    navigate("/newstar");
+    navigate("/news");
   };
 
   return (

@@ -50,7 +50,7 @@ const tourData = {
   image_url: Logo,
   scategory: 267,
   title: "한손으로 읽는 숏폼 트렌드 짧은 NEWS, 뉴스타",
-  url: "https://newstar.world",
+  url: "https://yu-jeong55.github.io/projects/newstar",
 };
 
 export default function ShortForm() {

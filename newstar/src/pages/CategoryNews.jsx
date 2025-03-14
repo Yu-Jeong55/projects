@@ -89,7 +89,7 @@ export default function CategoryNews() {
     return (
       <>
         <SmallCategoryBox
-          onClick={() => navigate(`/newstar/category/${bigCategoryCode}`)}
+          onClick={() => navigate(`/news/category/${bigCategoryCode}`)}
           $isOpen={hide[bigCategoryCode]}
         >
           {BigCategory[bigCategoryCode]} 전체
@@ -97,7 +97,7 @@ export default function CategoryNews() {
         {SmallCategoryData[bigCategoryCode]?.map((small) => (
           <SmallCategoryBox
             key={small.code}
-            onClick={() => navigate(`/newstar/category/${small.code}`)}
+            onClick={() => navigate(`/news/category/${small.code}`)}
             $isOpen={hide[bigCategoryCode]}
           >
             {small.name}

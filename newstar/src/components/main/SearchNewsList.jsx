@@ -12,7 +12,6 @@ const BoxContainer = styled.div`
   gap: 20px;
   padding: 10px;
   cursor: pointer;
-  // border-bottom: 1px solid #ccc;
   height: 75px;
 `;
 
@@ -55,7 +54,7 @@ const SearchNewsList = ({ NewsData }) => {
   const navigate = useNavigate();
 
   const handleNewsClick = (articleId) => {
-    navigate(`/newstar/${articleId}`);
+    navigate(`/news/${articleId}`);
   };
 
   return (

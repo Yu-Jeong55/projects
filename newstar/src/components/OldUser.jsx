@@ -116,7 +116,7 @@ function AddQR() {
           선택
         </GetFileButton>
       </FileContainer>
-      <StartButton onClick={() => navigate("/newstar")}>시작하기</StartButton>
+      <StartButton onClick={() => navigate("/news")}>시작하기</StartButton>
     </AddQRContainer>
   );
 }

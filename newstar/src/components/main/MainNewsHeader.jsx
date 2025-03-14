@@ -39,13 +39,13 @@ export default function NewsHeader({
     <MainNewsHeaderContainer>
       <NewsTagAndLike>
         <NewsTags data-tour="tag">
-          <Link to={`/newstar/category/${newsData.bcategory}`}>
+          <Link to={`/news/category/${newsData.bcategory}`}>
             <Tag fontSize={"12px"}>{`# ${
               BigCategory[newsData.bcategory]
             }`}</Tag>
           </Link>
           {SmallCategory[newsData.scategory] && (
-            <Link to={`/newstar/category/${newsData.scategory}`}>
+            <Link to={`/news/category/${newsData.scategory}`}>
               <Tag fontSize={"12px"}>{`# ${
                 SmallCategory[newsData.scategory]
               }`}</Tag>
