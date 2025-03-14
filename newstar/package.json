@@ -1,0 +1,47 @@
+{
+  "name": "newstar",
+  "homepage": "https://yu-jeong55.github.io/newstar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@reactour/tour": "^3.6.1",
+    "aos": "^2.3.4",
+    "axios": "^1.6.7",
+    "gh-pages": "^6.3.0",
+    "jsqr": "^1.4.0",
+    "lottie-react": "^2.4.0",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-intersection-observer": "^9.8.1",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.22.3",
+    "react-select": "^5.8.0",
+    "react-slick": "^0.30.2",
+    "recoil": "^0.7.7",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8",
+    "swiper": "^11.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.1.0",
+    "vite-plugin-pwa": "^0.19.2"
+  }
+}
