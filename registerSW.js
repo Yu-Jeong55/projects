@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/newstar/sw.js', { scope: '/newstar/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/projects/newstar/sw.js', { scope: '/projects/newstar/' })})}
